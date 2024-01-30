@@ -1,9 +1,13 @@
 function reverseArray(arr) {
   // Add code.
+  const reversed = arr.reverse();
+  return reversed;
 }
 
 function reverseArrayInPlace(arr) {
   // Add code.
+  const reversed = arr.reverse();
+  return reversed;
 }
 
 
