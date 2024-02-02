@@ -1,40 +1,47 @@
+const split = [];
 function range(start, end, step = 1) {
   // Add code.
-  const list = [end.length];
-  // let k = start;
-  // do
-  // {
-  //   k + 1;
-  // }
-  // while (start < end)
-  let k = 0;
-  for(let u = 0; u < list.length; u++)
-  {
-    k + 1;
-    k = list[u];
-  }
-  return list;
+  const list = [];
   if(start > end)
   {
-
-  }
-  if(end > start)
-  {
-    let i = end;
-    for(let y = i; y < start; y--)
+    for(let q = end; q <= start; q++)
     {
-      list = y - 1;
+      list.unshift(q);
+      split.unshift(q);
     }
     return list;
   }
-  if(step > start && end)
+  if(end > start)
   {
-
+    for(let u = start; u <= end; u++)
+    {
+      list.push(u);
+      split.push(u);
+    }
+    return list;
   }
+  return 0;
 }
 
 function sum(numbers) {
   // Add code.
+  // let lowest = Math.min(numbers);
+  // console.log(lowest);
+  // let highest = Math.max(numbers);
+  // for(let p = lowest; p < highest; p++)
+  // const list_1 = [];
+  // numbers = list_1.push();
+// console.log(split);
+
+  let grand = 0;
+  for(let p = 0; p < numbers.length; p++)
+  {
+    grand += numbers[p];
+    // grand + numbers[p]; 
+    // return console.log(numbers[p]);
+  }
+  return grand;
+
 }
 
 
